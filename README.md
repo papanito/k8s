@@ -2,11 +2,11 @@
 
 Kubernetes resources i.e. notes and scripts which might be useful to others as well
 
-## Delete multiple namespaces in state `Termintating`
+## Delete multiple namespaces in state `Terminating`
 
 Use the script [`kill-kube-ns.sh](./kill-kube-ns.sh) from Redhat as follows
 
-```
+```bash
 kubectl get ns | awk '/Term/ { print $1 }' | while IFS= read -r line; do ~/bin/kill-kube-ns.sh $line; done
 ```
 
