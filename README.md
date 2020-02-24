@@ -11,3 +11,7 @@ kubectl get ns | awk '/Term/ { print $1 }' | while IFS= read -r line; do ~/bin/k
 ```
 
 Reference is [this post at stackoverflow.com](https://stackoverflow.com/questions/60230242/how-to-output-the-result-of-a-chain-of-commands-for-a-given-input-with-bash/60303522#60303522)
+
+## DNS Resolution Problems
+
+Reference: [dns-debugging-resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
